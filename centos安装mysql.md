@@ -47,7 +47,7 @@ grant all privileges on *.* to root@"113.123.123.1" identified by "123456789";
 systemctl enable mysqld 
 systemctl daemon-reload
 #防火墙开放3306端口
-firewall-cmd --zone=public --add-port=3306/tcp --permanent\
+firewall-cmd --zone=public --add-port=3306/tcp --permanent
 firewall-cmd --reload
 #关闭开机启动
 systemctl disable mysqld
